@@ -4,7 +4,7 @@ Servo servol;
 Servo servor;
 Servo servom;
 
-int pause=100;
+int pause=90;
 
 void setup(){
   servol.attach(9);
@@ -24,7 +24,7 @@ void l_rueck(){
 
 void l(){
   servom.write(90);  
-  delay(pause);  
+  delay(pause/2);  
 }
 
 void r_vor(){
@@ -39,7 +39,7 @@ void r_rueck(){
 
 void r(){
   servom.write(65);  
-  delay(pause);  
+  delay(pause/2);  
 }
 
 void loop(){
